@@ -4,7 +4,7 @@ public class Prime {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);  //initialise scanner sc
         int a = sc.nextInt(), b = sc.nextInt();     //a=lower end of interval and b=upper end
-        while (a < b) {     //while loop which runs while a is less than b
+        while (a <= b) {     //while loop which runs while a is less than b
             boolean check = false;  //check set to false
             for(int i = 2; i <= a/2; ++i) {     //for loop to check if numbers are prime also no number is divisible by more than its half.
                 if(a % i == 0) {    //if a mod i==0 then an int divides into it meaning its not a prime
